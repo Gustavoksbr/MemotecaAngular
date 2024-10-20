@@ -4,6 +4,7 @@ import { CabecalhoComponent } from "./componentes/cabecalho/cabecalho.component"
 import { RodapeComponent } from "./componentes/rodape/rodape.component";
 import { CriarPensamentoComponent } from "./componentes/pensamentos/criar-pensamento/criar-pensamento.component";
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
