@@ -1,5 +1,6 @@
-<div class="pensamento {{pensamento.modelo}} ff-roboto-mono pensamento-p"> <!--  olha que loucura: aqui o html utiliza o nome do modelo descrito no ts, para o css estilizar de acordo com o nome da classe. Só tem q tomar cuidado em manter os mesmos nomes -->
-<img src="imagens/{{ pensamento.modelo }}.png" alt="Aspas coloridas">
+<div class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()"> <!-- commit n9: olha que loucura: aqui o html utiliza o nome do modelo descrito no ts, para o css estilizar de acordo com o nome da classe. Só tem q tomar cuidado em manter os mesmos nomes -->
+<!-- O uso de ngClass em vez de {{}} se dá pelo fato de que ngClass é mais recomendável quando o estilo do css pode variar bastante dinamicamente. O ngClass é mais perfomático, pois permite que o Angular faça atualizações mais eficientes, aplicando ou removendo as classes conforme necessário sem precisar recriar toda a string de classe -->
+    <img src="imagens/{{ pensamento.modelo }}.png" alt="Aspas coloridas">
 <p class="conteudo">{{ pensamento.conteudo }}</p>
 <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
 <div class="acoes">
