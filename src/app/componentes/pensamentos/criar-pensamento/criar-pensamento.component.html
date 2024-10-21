@@ -63,7 +63,7 @@
           Prévia:
           <div class="modelo modelo2 ff-roboto-mono">
             <img src="imagens/modelo2.png" alt="Aspas azul claro">
-            <p class="conteudo">{{ pensamento.conteudo }}</p>
+            <p class="conteudo" [textContent]="pensamento.conteudo"></p> <!-- outro jeito de pegar informacoes do componente.ts--> 
             <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
           </div>
         </div>
@@ -92,7 +92,8 @@
       </div>
       <div class="acoes">
         <button (click)="criarPensamento()" class="botao">Salvar</button>
-        <button (click)="cancelarPensamento()" class="botao">Cancelar</button>
+        <button routerLink="" class="botao">Cancelar</button>
       </div>
     </form>
+    <div *ngIf="1+1==56"><p>eita</p></div>
   </section>
