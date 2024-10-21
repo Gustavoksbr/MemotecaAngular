@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# node_modules do back end
+/simulacao_back_end/node_modules

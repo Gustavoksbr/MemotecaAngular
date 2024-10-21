@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { PensamentoComponent } from '../pensamento/pensamento.component';
+import { Pensamento } from '../../../core/model/pensamento';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -12,8 +12,8 @@ import { PensamentoComponent } from '../pensamento/pensamento.component';
   styleUrl: './criar-pensamento.component.css'
 })
 export class CriarPensamentoComponent {
-  pensamento={
-    id:"1",
+  pensamento : Pensamento={
+    id:1,
     conteudo:"Aprendendo Angular",
     autoria : "dev",
     modelo:"modelo1",
