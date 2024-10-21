@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { PensamentoComponent } from '../pensamento/pensamento.component';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -20,10 +21,7 @@ export class CriarPensamentoComponent {
   }
   criarPensamento()
   {
+    let teste:string = "asddaasd";
     alert("Novo pensamento criado!");
-  }
-  cancelarPensamento()
-  {
-    alert("Pensamento cancelado!");
   }
 }
