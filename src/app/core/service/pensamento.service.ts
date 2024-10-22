@@ -13,4 +13,18 @@ export class PensamentoService {
    listar():Observable<Pensamento[]>{
     return this.http.get<Pensamento[]>(this.API);
    }
+   criar(pensamento:Pensamento):Observable<Pensamento>{
+    return this.http.post<Pensamento>(this.API,
+        pensamento
+    );
+   }
+   excluir(id:string):Observable<Pensamento>{
+    const url = `${this.API}/${id}`; //http://localhost:3000/pensamentos/{id}
+    return this.http.delete<Pensamento>(url);
+   }
+   buscarPorId(id:string):Observable<Pensamento>
+   {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Pensamento>(url);
+   }
 }
