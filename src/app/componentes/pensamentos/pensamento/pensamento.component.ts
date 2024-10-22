@@ -1,6 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Pensamento } from '../../../core/model/pensamento';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-pensamento',
