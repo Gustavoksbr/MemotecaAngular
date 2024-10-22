@@ -3,15 +3,22 @@ import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensam
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { Erro404Component } from './componentes/erro404/erro404.component';
 import { ExcluirPensamentoComponent } from './componentes/pensamentos/excluir-pensamento/excluir-pensamento.component';
+import { EditarPensamentoComponent } from './componentes/pensamentos/editar-pensamento/editar-pensamento.component';
 
 export const routes: Routes = [
-    {path:"criarPensamento",
-        component: CriarPensamentoComponent
+    {
+      path:"criarPensamento",
+      component: CriarPensamentoComponent
      },
-     {path:"excluirPensamento/:id",
+     {
+      path:"excluirPensamento/:id",
       component: ExcluirPensamentoComponent
       },
-     {path:'',
+      {path:"alterarPensamento/:id",
+         component: EditarPensamentoComponent
+      },
+     {
+      path:'',
         component: ListarPensamentoComponent
      },
      {
